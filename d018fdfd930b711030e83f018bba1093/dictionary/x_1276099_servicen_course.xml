@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5cfb71bd934b711030e83f018bba10ff" label="Course" max_length="40" name="x_1276099_servicen_course" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Course" mandatory="true" max_length="40" name="coursename" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Course Duration" max_length="40" name="course_duration" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Course StartDate" max_length="40" name="course_startdate" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Shift" max_length="40" name="shift" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Afternoon" value="afternoon"/>
+                <element inactive_on_update="false" label="Evening" value="evening"/>
+                <element inactive_on_update="false" label="Morning" value="morning"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="26178af5938b711030e83f018bba1056" label="SN_Students" max_length="40" name="x_1276099_servicen_sn_students" type="collection">
+        <element label="Course" max_length="40" name="course" type="string"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="146186b9934b711030e83f018bba108e" extends="x_1276099_servicen_course" label="Students" max_length="40" name="x_1276099_servicen_students" type="collection">
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+    </element>
+</database>
